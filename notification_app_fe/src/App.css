@@ -1,0 +1,110 @@
+.app {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.form,
+.app > div:nth-of-type(2),
+.app > div:nth-of-type(3) {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 15px;
+}
+
+input {
+  min-width: 260px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  background-color: #1f6feb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1557b0;
+}
+
+button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.summary {
+  color: #475569;
+  font-weight: 600;
+}
+
+.notifications {
+  margin-top: 20px;
+  display: grid;
+  gap: 14px;
+}
+
+.notification {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: white;
+}
+
+.notification p {
+  margin: 0 0 8px;
+}
+
+.notification span {
+  display: inline-block;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+.unread {
+  border-left: 6px solid #f59e0b;
+  background-color: #fff8eb;
+}
+
+.read {
+  border-left: 6px solid #22c55e;
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.pagination {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.pagination span {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .app {
+    margin: 12px;
+    padding: 16px;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+  }
+}
